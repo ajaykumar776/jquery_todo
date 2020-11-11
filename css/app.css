@@ -1,0 +1,18 @@
+.completed{
+    text-decoration: line-through !important;           /*this will just cut the line, will show that it is completed.*/
+}
+
+#set
+{
+    background-color:red;
+}
+#todo
+{
+    background-color: saddlebrown;
+    color:black;
+}
+#jumbo
+{
+    background-color: slategrey;
+    color: white;
+}
