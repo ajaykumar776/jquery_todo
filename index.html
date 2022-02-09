@@ -2,31 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--used because , as screen size will change ,it will automatically adjust its body !-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
     <title>jquery_to_do|type</title>
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <div class="container">
-     <!-- top_part_only_jumbotron -->
-        <div class="jumbotron"id="jumbo">
-          <h1 style="display: block; text-align: center;">simple_to_do</h1>      
+    <div class="row">
+        <div class="col-sm-4 col-md-offset-4"id="todo">
+            <h1 style="text-align: center;">Todo Task <span class="badge pull-right"id="to-do-count">0</span></h1><br>
+            <form id="to-do-from">
+                <div class="form-group">
+                    <input type="text" name="name" id="to-do-input" class="form-control"placeholder="Enter task"autofocus> 
+                    <br>
+                    <button class="btn btn-primary btn-block" id="to-do-btn">Add</button>
+                </div> 
+            </form>
+            <ul class="list-group" id="to-do-list"></ul>
         </div>
-        <!-- end_jumbo -->
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4"id="todo"><!--we have taken 4 col and we have left first    starting 4 rows-->
-                <h1 style="text-align: center;">TO_DO <span class="badge pull-right"id="to-do-count">0</span></h1><br>
-                <form id="to-do-from">
-                    <div class="form-group">
-                        <input type="text" name="name" id="to-do-input" class="form-control"placeholder="Enter task"autofocus>     <!--have given class, id, type and placeholder.here autofocus is used because when we will open it , our cursor will be automatically is there !-->
-                        <br>
-                        <button class="btn btn-primary btn-block" id="to-do-btn">Add</button>
-                    </div> 
-                </form>
-                <ul class="list-group" id="to-do-list"></ul>
-            </div>
-        </div>
+    </div>
     </div>
     <script src="plugins/jquery/jquery.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
